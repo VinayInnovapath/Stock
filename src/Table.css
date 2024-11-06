@@ -1,0 +1,317 @@
+Style for the main container
+.table-container {
+  position: relative; /* Needed for absolute positioning of the button */
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* Button for the Graph */
+.graph-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px 20px;
+  background-color: #4CAF50;  /* Green background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.graph-button:hover {
+  background-color: #45a049;  /* Darker green on hover */
+}
+
+/* Table styling */
+.stock-table {
+  width: 100%; /* Full width */
+  margin-top: 40px;
+  border-collapse: collapse; /* Collapse borders */
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  border: 1px solid #ddd; /* Outer border */
+}
+
+/* Table header styling */
+.stock-table th {
+  padding: 15px;
+  text-align: left;
+  background-color: #f4f4f4;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Table data styling */
+.stock-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Alternating row colors */
+.stock-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.stock-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Additional table borders */
+.stock-table tr:first-child th {
+  border-top: 2px solid #ddd;
+}
+
+.stock-table tr:last-child td {
+  border-bottom: 2px solid #ddd;
+}
+
+/* Graph container styling */
+.graph-container {
+  margin-top: 40px;
+  width: 100%;
+  height: 400px; /* Set graph height */
+}
+
+/* Style for the main container */
+.table-container {
+  position: relative;
+  width: 80%;
+  margin: 20px auto;
+}
+
+/* Button for the Graph */
+.graph-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;  /* Green background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.graph-button:hover {
+  background-color: #45a049;  /* Darker green on hover */
+}
+
+/* Table styling */
+.stock-table {
+  width: 100%;
+  margin-top: 40px;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+/* Graph container */
+.graph-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Style for the Graph container */
+.graph-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Styling for the Hide Graph button */
+.hide-graph-button {
+  padding: 10px 20px;
+  background-color: #f44336;  /* Red background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.hide-graph-button:hover {
+  background-color: #e53935;  /* Darker red on hover */
+}
+
+
+.graph-container {
+  text-align: center;
+  max-width: 1200px; /* Adjust the maximum width */
+  margin: 0 auto;
+}
+
+.hide-graph-button {
+  padding: 10px 20px;
+  background-color: #f44336;  /* Red background */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.charts-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;  /* Space between the charts */
+  flex-wrap: wrap;  /* Allow the charts to wrap on smaller screens */
+  margin-top: 20px;
+}
+
+.chart-item {
+  flex: 1; /* Each chart will take up equal width */
+  max-width: 500px; /* Set max width to ensure charts don't stretch too much */
+  min-width: 400px; /* Set a minimum width to ensure charts aren't too small */
+}
+
+.chart-item h2 {
+  margin-bottom: 10px;  /* Space between title and chart */
+}
+
+.graph-container canvas {
+  width: 100% !important;
+  max-height: 300px; /* Set a max-height for the canvas */
+}
+
+
+
+/* Table.css */
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+/* Hamburger Menu (Three lines) */
+.hamburger-menu {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger-line {
+  height: 4px;
+  background-color: #333;
+  border-radius: 4px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: white;
+  padding-top: 20px;
+  position: fixed;
+  height: 100%;
+  left: -250px; /* Initially hidden */
+  transition: left 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  left: 0; /* Sidebar is visible when 'open' class is added */
+}
+
+.sidebar h2 {
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.sidebar ul li:hover {
+  background-color: #575757;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 0; /* No margin when sidebar is hidden */
+  padding: 20px;
+  width: 100%;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.sidebar.open + .main-content {
+  margin-left: 250px; /* Shift content to the right when sidebar is open */
+}
+
+.navbar {
+  background-color: #4CAF50;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Date Filters Styling */
+.date-filters {
+  margin-top: 60px;  /* Adds space from the top */
+  margin-bottom: 20px;
+  margin-left: 150px; /* Space below the filters */
+}
+
+.date-filters label {
+  margin-right: 10px;
+  margin-bottom: 10px; /* Space below labels */
+}
+
+.date-filters input {
+  margin-bottom: 10px; /* Space below each input field */
+}
+
+/* Graph Button */
+.graph-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 10px;
+  
+}
+
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.stock-table th, .stock-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.welcome-message {
+  text-align: center;
+}
+
+.welcome-message h2 {
+  font-size: 28px;
+}
+
+.welcome-message p {
+  font-size: 18px;
+}
